@@ -1,2 +1,2 @@
-# caffeine-recipes-backend
-The backend for a caffeine recipes website
+# caffeine-recipes-frontend
+The frontend for a caffeine recipes website

@@ -9,11 +9,7 @@ export default function AppNav() {
           <NavBtn route={'/about'}>About</NavBtn>
           <NavBtn route={'/recipes'}>Recipes</NavBtn>
           <NavBtn route={'/contact'}>Contact us</NavBtn>
-          <NavBtn
-            route={'/sign-in'}
-            bgcolor={'bg-white'}
-            txtcolor={'text-black'}
-          >
+          <NavBtn route={'/'} bgcolor={'bg-white'} txtcolor={'text-black'}>
             Sign in
           </NavBtn>
         </div>

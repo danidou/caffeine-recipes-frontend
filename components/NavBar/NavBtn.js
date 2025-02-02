@@ -13,8 +13,12 @@ export default function NavBtn({
   return (
     <div
       className={`px-3 py-3 text-xl 
-        ${bgcolor} ${txtcolor}
-        ${pathname === route ? 'text-blue-500' : txtcolor}
+        ${bgcolor}
+        ${
+          pathname === route && route !== 'sign-in'
+            ? 'text-yellow-300'
+            : txtcolor
+        }
         hover:text-white hover:bg-gray-800 rounded`}
     >
       <Link href={route}>{children}</Link>

@@ -11,8 +11,9 @@ export default function NavBtn({
 }) {
   const pathname = usePathname();
   return (
-    <div
-      className={`px-3 py-3 text-xl 
+    <div>
+      <button
+        className={`px-3 py-3 text-xl font-bold w-full md:w-fit
         ${bgcolor}
         ${
           pathname === route && route !== 'sign-in'
@@ -20,8 +21,9 @@ export default function NavBtn({
             : txtcolor
         }
         hover:text-white hover:bg-gray-800 rounded`}
-    >
-      <Link href={route}>{children}</Link>
+      >
+        <Link href={route}>{children}</Link>
+      </button>
     </div>
   );
 }

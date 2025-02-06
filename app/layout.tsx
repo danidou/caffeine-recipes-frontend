@@ -26,13 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-no-repeat bg-center bg-fixed bg-cover bg-[url(@/public/home/ai_background_placeholder.jpg)]  `}
       >
-        <main className="relative z-0 min-h-[200vh] w-full bg-no-repeat bg-top bg-scroll bg-cover bg-[url(@/public/home/ai_background_placeholder.jpg)] bg-opacity-50 ">
-          <div className="absolute inset-0 w-full h-full bg-black bg-opacity-40 flex flex-col items-center">
-            <AppNav />
-            {children}
-          </div>
+        <main className="relative z-0 min-h-screen w-full flex flex-col items-center">
+          <AppNav />
+          {children}
         </main>
       </body>
     </html>

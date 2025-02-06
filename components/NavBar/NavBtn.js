@@ -11,8 +11,9 @@ export default function NavBtn({
 }) {
   const pathname = usePathname();
   return (
-    <div>
-      <button
+    <div className="flex items-center">
+      <Link
+        href={route}
         className={`px-3 py-3 text-xl font-bold w-full md:w-fit
         ${bgcolor}
         ${
@@ -22,8 +23,8 @@ export default function NavBtn({
         }
         hover:text-white hover:bg-gray-800 rounded`}
       >
-        <Link href={route}>{children}</Link>
-      </button>
+        {children}
+      </Link>
     </div>
   );
 }

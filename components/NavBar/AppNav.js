@@ -43,7 +43,7 @@ export default function AppNav() {
           </button>
         </div>
         {showNav && (
-          <div className="md:flex flex-col md:flex-row">
+          <div className="md:flex flex-col md:flex-row items-center justify-center">
             <NavBtn route={'/about'}>About</NavBtn>
             <NavBtn route={'/recipes'}>Recipes</NavBtn>
             <NavBtn route={'/contact'}>Contact us</NavBtn>
